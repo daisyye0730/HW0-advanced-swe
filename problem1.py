@@ -1,6 +1,7 @@
 #/usr/bin/python
 # -*- coding: utf-8 -*-
 # collaborated with zy2339 and jn2770
+# this code is used for advanced swe now 
 
 import random
 
@@ -69,17 +70,11 @@ def main():
             print("My sum: " + dealer_score.__str__())
             card_idx += 1
 
-          if (dealer_score == 21):
-            print("I win")
-            exit = True
-          elif (dealer_score > 21):
+          if (dealer_score > 21 and player_score > dealer_score):
             print("You win")
             exit = True
           elif (player_score == dealer_score):
             print("It is tie")
-            exit = True
-          elif (player_score > dealer_score):
-            print("You win")
             exit = True
           else: 
             print("I win")
